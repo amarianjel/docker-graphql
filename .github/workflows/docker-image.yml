@@ -38,7 +38,7 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker build -t amarianjel/graphql:0.0.2
+        docker push amarianjel/graphql:0.0.2
         
 # docker push amarianjel/graphql:$NEW_VERSION
 # docker push amarianjel/graphql:latest
